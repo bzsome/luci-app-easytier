@@ -1,4 +1,4 @@
-name: Build-OpenWrt-EasyTier
+name: Build-OpenWrt-EasyTier-Chao
 
 on:
   workflow_dispatch:
@@ -68,7 +68,7 @@ jobs:
              `apk add --allow-untrusted luci-app-easytier.apk`
 
              ${{ github.event.inputs.text }}
-           
+
             tag_name: ${{ env.TAG }}
             files: EasyTier-${{ matrix.arch }}-${{ matrix.sdk }}.zip
  
